@@ -62,8 +62,12 @@ Al final, usando la función de Update() en Unity usando la variable de timer de
 
 Logramos llegar a una eficiencia buena gracias a nuestro pathfinding algorithm, los robots casi siempre regresan de la forma mas eficiente al origen lo cual reduce mucho el tiempo que toma. Aun asi un aspecto muy ineficiente es que busca las cajas de una forma aleatoria, una mejora en este aspecto puede ser que las cajas se comuniquen entre si las locaciones de las cajas que encuentren para que no tengan que buscarlas todas al mismo tiempo.
 
-Fuera de esto, probablemente podemos optimizar nuestro algorithmo de pathfinding para que no tenga que correrse tantas veces que un solo robot scout haga los el analisis y se los mande a los demas robots o una forma que ocupe menos tiempo y espacio como usando reglas geometricas.
+Otro problema que vimos es que asumimos desde el inicio que los robots saben el layout de todo el grid cuando esa no es probablemente la situacion, un cambio seria ir adaptando la forma de encontrar el destino segun las posiciones descubiertas por los robots.
+
+Fuera de esto, probablemente podemos optimizar nuestro algorithmo de pathfinding para que no tenga que correrse tantas veces, seria que un solo robot scout haga el analisis y se los mande a los demas robots o una forma que ocupe menos tiempo y espacio como usando reglas geometricas.
 
 Un problema que encontramos con el sistema actual es que si hay muchos elementos(robots) es un poco lento y si esta tapado el origen y no se pueden mover estan atrapados permanentemente.
 
 Otra mejora podria ser que los dispositivos se comuniquen entre si sus locaciones para que puedan evitar obstruirse mutuamente.
+
+Finalmente un problema es que presentamente el programa corre por mucho tiempo y no se le puede poner un limite de tiempo o alguna forma de hacer un tracking de progreso a lo largo de una determinación de tiempo, algo que tendria que mejorarse para el futuro.
