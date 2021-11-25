@@ -5,7 +5,7 @@
 
 ## Diagrama de Clase y Protocolo de Agentes
 
-![](https://i.imgur.com/XYC3Vju.png)
+![](https://i.imgur.com/RQJtrDx.png)
 
 ## Jerarquia de Acciones
 
